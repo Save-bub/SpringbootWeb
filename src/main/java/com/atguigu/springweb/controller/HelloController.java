@@ -24,4 +24,8 @@ public class HelloController {
         map.put("hello","你好");
         return "success";
     }
+    @RequestMapping({"/","/index.html"})
+    public String index(){
+        return "index";
+    }
 }
